@@ -1,0 +1,27 @@
+{
+  "name": "nextjs-api-fetch-example",
+  "version": "1.0.0",
+  "description": "A simple example using fetched API data to render components",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "next",
+    "next.js",
+    "nextjs",
+    "api",
+    "ssr",
+    "example",
+    "boilerplate"
+  ],
+  "author": "Ruy Adorno",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^3.0.1-beta.7",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
