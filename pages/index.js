@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import fetch from 'isomorphic-fetch';
 
 export default class extends React.Component {
@@ -15,7 +16,7 @@ export default class extends React.Component {
             <section>
                 <h1>Node.js Server Side Render in the Age of APIs</h1>
                 <ul>
-                    { items.map(i => <li>{ i.title }</li>) }
+                    { items.map(i => <li><Link href={ `/post?id=${i.id}` }>{ i.title }</Link></li>) }
                 </ul>
             </section>
         );
