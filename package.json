@@ -4,7 +4,9 @@
   "description": "A simple example using fetched API data to render components",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev:mocks": "snapstub start",
+    "dev:next": "next",
+    "dev": "run-p dev:mocks dev:next",
     "build": "next build",
     "start": "next start"
   },
@@ -24,5 +26,8 @@
     "next": "^3.0.1-beta.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.0.2"
   }
 }
