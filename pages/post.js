@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import fetch from 'isomorphic-fetch';
 
-const HOST_NAME = process.env.HOST_NAME || 'http://localhost:8059/';
+const HOST_NAME = process.env.HOST_NAME || 'http://jsonplaceholder.typicode.com/';
 
 export default class extends React.Component {
     static async getInitialProps({ query }) {
